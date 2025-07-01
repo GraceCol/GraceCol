@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QA Tester Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-light-gray text-[#1a202c] font-sans">
+
+  <!-- Parent Container -->
+<div class="flex h-screen">
+  <!-- Left Panel (Fixed Bio) -->
+  <aside class="w-1/4 fixed left-0 top-0 h-screen bg-[#f0f4f8] text-[#1a202c] px-10 py-12 flex flex-col items-center text-center shadow-lg z-10">
+    <img src="assets/profile-1.jpg" alt="Profile Picture" class="w-56 h-56 rounded-full mb-6 shadow-md object-cover" />
+    <div>
+      <h1 class="text-3xl font-bold text-[#2563eb] mb-3">Grace Collamat</h1>
+      <p class="text-base leading-relaxed text-[#1a202c]">
+       QA Tester with 3 years of hands-on experience in agile environments, focused on maintaining high product quality and supporting smooth, bug-free releases through strong team collaboration.
+      </p>
+    </div>
+  </aside>
+
+  <!-- Right Panel (Main Content) -->
+  <main class="ml-[25%] w-[75%] h-screen overflow-y-auto p-20 bg-white">
+    <!-- Sticky Navigation-->
+    <nav class="sticky top-0 bg-white z-20 py-6 mb-10 flex justify-center space-x-10 text-sm font-medium text-gray-600 shadow-sm">
+      <a href="index.html" class="hover:text-[#2563eb] transition-colors duration-200">Home</a>
+      <a href="pages/projects.html" class="hover:text-[#2563eb] transition-colors duration-200">Projects</a>
+      <a href="pages/bug.html" class="hover:text-[#2563eb] transition-colors duration-200">Bug Reports</a>
+    </nav>
+
+      <!-- Experience Section -->
+      <section>
+        <h3 class="text-xl font-semibold text-[#1a202c] mb-4">QA Experience</h3>
+        <p class="mb-6 leading-relaxed text-[#4b5563]">
+          I’m a QA Tester with hands-on experience in manual testing for web and mobile applications. 
+          I focus on creating clear, well-documented test cases and detailed bug reports that make it easier 
+          for developers to identify, reproduce, and fix issues efficiently. 
+          <br></br>
+          At <a href = "https://vyde.io/" class="text-[#2563eb] underline">VYDE</a>, I also took on IT support 
+          responsibilities, resolving client-reported software and usability issues through a ticketing system. 
+          Balancing QA and support strengthened my communication skills and deepened my understanding of both 
+          technical challenges and user needs.
+          <br></br>
+          I was recognized as a key contributor to development and the team’s most active communicator, 
+          reflecting my commitment to delivering stable, user-friendly software through careful testing, 
+          thorough documentation, and close collaboration.
+        </p>
+        
+        <h3 class="text-xl font-semibold text-[#1a202c] mb-4">Tools & Technologies</h3>
+        <p class="mb-6 leading-relaxed text-[#4b5563]">
+          Over the years, I’ve worked with a wide range of tools that help me test thoroughly, document clearly, and collaborate smoothly with dev teams.
+        </p>
+
+        <div class="grid gap-6 md:grid-cols-2 text-base">
+          <div>
+          <h3 class="font-semibold text-[#2563eb] mb-2">📋 Project & QA Management</h3>
+          <ul class="list-disc list-inside space-y-1">
+            <li><span class="font-medium text-[#4b5563">Jira</span> – Manage tasks, bugs, and agile sprints</li>
+            <li><span class="font-medium text-[#4b5563">Confluence</span> – Document test cases and QA processes</li>
+          </ul>
+          </div>
+
+          <div>
+          <h3 class="font-semibold text-[#2563eb] mb-2">🔁 Version Control</h3>
+          <ul class="list-disc list-inside space-y-1">
+            <li><span class="font-medium text-[#4b5563">Bitbucket</span> – Track commits and collaborate on code</li>
+            <li><span class="font-medium text-[#4b5563">SmartGit</span> – GUI for Git to manage branches and changes</li>
+          </ul>
+          </div>
+
+          <div>
+          <h3 class="font-semibold text-[#2563eb] mb-2">🧪 Testing & Debugging</h3>
+          <ul class="list-disc list-inside space-y-1">
+            <li><span class="font-medium text-[#4b5563">Postman</span> – Test APIs and validate backend responses</li>
+            <li><span class="font-medium text-[#4b5563">Docker</span – Simulate local environments for consistent testing</li>
+            <li><span class="font-medium text-[#4b5563">Android Studio</span> – Run and debug native Android apps</li>
+            <li><span class="font-medium text-[#4b5563">Expo Go</span> – Test React Native apps on real devices instantly</li>
+          </ul>
+          </div>
+
+          <div>
+          <h3 class="font-semibold text-[#2563eb] mb-2">💻 Backend & Database Tools</h3>
+          <ul class="list-disc list-inside space-y-1">
+            <li><span class="font-medium text-[#4b5563">Visual Studio Code</span> – Review logs and inspect source code</li>
+            <li><span class="font-medium text-[#4b5563">Laragon</span> – Run and test local backend environments</li>
+            <li><span class="font-medium text-[#4b5563">MySQL Workbench</span> – Query and validate relational databases</li>
+            <li><span class="font-medium text-[#4b5563">MongoDB Compass</span> – Inspect and test NoSQL data structures</li>
+          </ul>
+          </div>
+        </div>
+        <br></br>
+        <p class="mb-6 leading-relaxed text-[#4b5563]">
+          These tools allow me to deliver reliable, bug-free releases through accurate testing, thorough documentation, and strong collaboration with developers.
+        </p>
+      </section>
+
+
+      <!-- Contact Section
+      <section id="contact" class="card">
+        <h3 class="text-xl font-semibold text-[#1a202c] mb-4">Contact Me</h3>
+        <form class="space-y-4">
+          <div>
+            <label class="form-label">Name</label>
+            <input type="text" placeholder="Your name" class="form-input" />
+          </div>
+          <div>
+            <label class="form-label">Email</label>
+            <input type="email" placeholder="you@example.com" class="form-input" />
+          </div>
+          <div>
+            <label class="form-label">Message</label>
+            <textarea rows="4" placeholder="Write your message..." class="form-input"></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+      </section>  -->
+     
+      <footer class="bg-gray-100 text-gray-700 py-4 mt-16">
+      <div class="text-center text-xs text-gray-500">
+      &copy; 2025 Grace Collamat. All rights reserved.
+      </div>
+      </footer> 
+    
+    </main>
+  </div>
+  
+</body>
+</html>
