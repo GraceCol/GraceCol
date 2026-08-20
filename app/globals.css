@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --bg: #f3f6fb;
+  --bg-soft: #e9eef7;
+  --surface: #ffffff;
+  --surface-muted: #f8fafc;
+  --text-strong: #0f172a;
+  --text-subtle: #334155;
+  --line: #dbe3ef;
+  --accent: #2563eb;
+  --accent-soft: rgba(37, 99, 235, 0.12);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-outfit), "Segoe UI", sans-serif;
+  background:
+    radial-gradient(circle at 8% 12%, rgba(37, 99, 235, 0.14), transparent 35%),
+    radial-gradient(circle at 92% 24%, rgba(15, 23, 42, 0.08), transparent 28%),
+    linear-gradient(165deg, var(--bg) 0%, var(--bg-soft) 100%);
+  color: var(--text-strong);
+}
+
+.bg-light-gray {
+  background-color: transparent;
+}
+
+.section-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #fbbf24;
+  display: inline-block;
+}
+
+.app-main > section,
+.app-main > h2,
+.app-main > div {
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: var(--surface);
+  box-shadow: 0 10px 40px rgba(15, 23, 42, 0.06);
+}
+
+.app-main > h2 {
+  margin-top: 0;
+  padding: 2rem 1.5rem;
+}
+
+.app-main > section,
+.app-main > div {
+  padding: 1.5rem;
+}
+
+.app-nav-link {
+  border-radius: 999px;
+  padding: 0.45rem 0.95rem;
+  transition: color 220ms ease, background-color 220ms ease, transform 220ms ease;
+}
+
+.app-nav-link:hover {
+  background: var(--accent-soft);
+  color: var(--accent);
+  transform: translateY(-1px);
+}
