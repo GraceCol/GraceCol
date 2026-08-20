@@ -1,4 +1,5 @@
 import PortfolioLayout from "@/components/PortfolioLayout";
+import { asset } from "@/lib/site-config";
 
 export default function ContactPage() {
   return (
@@ -36,7 +37,7 @@ export default function ContactPage() {
         </div>
         <div className="pt-4">
           <a
-            href="/assets/grace-collamat-resume.pdf"
+            href={asset("/assets/grace-collamat-resume.pdf")}
             download
             className="inline-block rounded-lg bg-blue-600 px-6 py-2 text-white transition hover:bg-blue-700"
           >
@@ -48,7 +49,7 @@ export default function ContactPage() {
       <section id="pdf-reader" className="p-4">
         <div className="h-[80vh] w-full overflow-hidden shadow-lg">
           <iframe
-            src="/assets/grace-collamat-resume.pdf"
+            src={asset("/assets/grace-collamat-resume.pdf")}
             className="h-full w-full"
             title="Resume PDF"
           />

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { asset } from "@/lib/site-config";
 
 const navItems = [
   { href: "/", label: "About" },
@@ -16,7 +17,7 @@ export default function PortfolioLayout({ children }: PortfolioLayoutProps) {
     <div className="min-h-screen lg:flex lg:gap-6 lg:p-6">
       <aside className="hidden lg:sticky lg:top-6 lg:flex lg:h-[calc(100vh-3rem)] lg:w-[22rem] lg:flex-col lg:items-center lg:justify-center lg:rounded-3xl lg:border lg:border-[#dbe3ef] lg:bg-white/80 lg:px-10 lg:py-12 lg:text-center lg:shadow-[0_20px_50px_rgba(15,23,42,0.08)] lg:backdrop-blur-xl">
         <img
-          src="/assets/profile-1.jpg"
+          src={asset("/assets/profile-1.jpg")}
           alt="Profile Picture"
           className="mb-6 h-48 w-48 rounded-3xl object-cover shadow-[0_18px_35px_rgba(37,99,235,0.2)]"
         />
@@ -33,7 +34,7 @@ export default function PortfolioLayout({ children }: PortfolioLayoutProps) {
       <main className="w-full rounded-none border-0 bg-transparent px-4 pb-8 pt-4 lg:h-[calc(100vh-3rem)] lg:overflow-y-auto lg:rounded-3xl lg:border lg:border-[#dbe3ef] lg:bg-white/70 lg:px-8 lg:pb-10 lg:pt-6 lg:shadow-[0_20px_50px_rgba(15,23,42,0.08)] lg:backdrop-blur-xl">
         <header className="rounded-3xl border border-[#dbe3ef] bg-white/90 px-6 py-8 text-center shadow-sm lg:hidden">
           <img
-            src="/assets/profile-1.jpg"
+            src={asset("/assets/profile-1.jpg")}
             alt="Profile Picture"
             className="mx-auto mb-4 h-32 w-32 rounded-3xl object-cover shadow-[0_12px_26px_rgba(37,99,235,0.2)]"
           />

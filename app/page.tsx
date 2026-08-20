@@ -1,4 +1,5 @@
 import PortfolioLayout from "@/components/PortfolioLayout";
+import { asset } from "@/lib/site-config";
 
 export default function AboutPage() {
   return (
@@ -124,7 +125,7 @@ export default function AboutPage() {
         </h3>
         <div className="h-[80vh] w-full overflow-hidden rounded-lg border shadow-lg">
           <iframe
-            src="/assets/release-process.pdf"
+            src={asset("/assets/release-process.pdf")}
             className="h-full w-full"
             title="Testing and Git Workflow"
           />

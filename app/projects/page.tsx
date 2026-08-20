@@ -1,5 +1,6 @@
 import GalleryImage from "@/components/GalleryImage";
 import PortfolioLayout from "@/components/PortfolioLayout";
+import { asset } from "@/lib/site-config";
 
 export default function ProjectsPage() {
   return (
@@ -34,10 +35,10 @@ export default function ProjectsPage() {
         <section>
           <h3 className="font-semibold text-[#1a202c]">Application Interface</h3>
           <div className="grid grid-cols-2 gap-4 p-4 sm:grid-cols-3 md:grid-cols-4">
-            <GalleryImage href="/assets/vb1.jpg" src="/assets/vb1.jpg" alt="App UI 1" />
-            <GalleryImage href="/assets/vb2.jpg" src="/assets/vb2.jpg" alt="App UI 2" />
-            <GalleryImage href="/assets/vb4.jpg" src="/assets/vb4.jpg" alt="App UI 3" />
-            <GalleryImage href="/assets/vb5.jpg" src="/assets/vb5.jpg" alt="App UI 4" />
+            <GalleryImage href={asset("/assets/vb1.jpg")} src={asset("/assets/vb1.jpg")} alt="App UI 1" />
+            <GalleryImage href={asset("/assets/vb2.jpg")} src={asset("/assets/vb2.jpg")} alt="App UI 2" />
+            <GalleryImage href={asset("/assets/vb4.jpg")} src={asset("/assets/vb4.jpg")} alt="App UI 3" />
+            <GalleryImage href={asset("/assets/vb5.jpg")} src={asset("/assets/vb5.jpg")} alt="App UI 4" />
           </div>
         </section>
 
@@ -45,17 +46,17 @@ export default function ProjectsPage() {
           <h3 className="mb-2 font-semibold text-[#1a202c]">Test Documentation</h3>
           <ul className="list-inside list-disc space-y-1 text-blue-600">
             <li>
-              <a href="/assets/zm-749-test-cases.pdf" className="text-blue-600 hover:text-blue-800 hover:underline">
+              <a href={asset("/assets/zm-749-test-cases.pdf")} className="text-blue-600 hover:text-blue-800 hover:underline">
                 Test Sample 1 (PDF)
               </a>
             </li>
             <li>
-              <a href="/assets/zm-757-test-cases.pdf" className="text-blue-600 hover:text-blue-800 hover:underline">
+              <a href={asset("/assets/zm-757-test-cases.pdf")} className="text-blue-600 hover:text-blue-800 hover:underline">
                 Test Sample 2 (PDF)
               </a>
             </li>
             <li>
-              <a href="/assets/zm-1184-date-entry-issue.mp4" className="text-blue-600 hover:text-blue-800 hover:underline">
+              <a href={asset("/assets/zm-1184-date-entry-issue.mp4")} className="text-blue-600 hover:text-blue-800 hover:underline">
                 Test Sample 3 (Recording)
               </a>
             </li>
@@ -97,10 +98,10 @@ export default function ProjectsPage() {
         <section>
           <h3 className="font-semibold text-[#1a202c]">Application Interface</h3>
           <div className="grid grid-cols-2 gap-4 p-4 sm:grid-cols-3 md:grid-cols-4">
-            <GalleryImage href="/assets/p1.jpg" src="/assets/p1.jpg" alt="App UI 1" />
-            <GalleryImage href="/assets/p2.jpg" src="/assets/p2.jpg" alt="App UI 2" />
-            <GalleryImage href="/assets/p3.jpg" src="/assets/p3.jpg" alt="App UI 3" />
-            <GalleryImage href="/assets/p4.jpg" src="/assets/p4.jpg" alt="App UI 4" />
+            <GalleryImage href={asset("/assets/p1.jpg")} src={asset("/assets/p1.jpg")} alt="App UI 1" />
+            <GalleryImage href={asset("/assets/p2.jpg")} src={asset("/assets/p2.jpg")} alt="App UI 2" />
+            <GalleryImage href={asset("/assets/p3.jpg")} src={asset("/assets/p3.jpg")} alt="App UI 3" />
+            <GalleryImage href={asset("/assets/p4.jpg")} src={asset("/assets/p4.jpg")} alt="App UI 4" />
           </div>
         </section>
 
@@ -108,17 +109,17 @@ export default function ProjectsPage() {
           <h3 className="mb-2 font-semibold text-[#1a202c]">Test Documentation</h3>
           <ul className="list-inside list-disc space-y-1 text-blue-600">
             <li>
-              <a href="/assets/cp-398-tax-doc-tile-icon.xlsx" className="text-blue-600 hover:text-blue-800 hover:underline">
+              <a href={asset("/assets/cp-398-tax-doc-tile-icon.xlsx")} className="text-blue-600 hover:text-blue-800 hover:underline">
                 Test Sample 1 (xls)
               </a>
             </li>
             <li>
-              <a href="/assets/home-redesign-test-document.xlsx" className="text-blue-600 hover:text-blue-800 hover:underline">
+              <a href={asset("/assets/home-redesign-test-document.xlsx")} className="text-blue-600 hover:text-blue-800 hover:underline">
                 Test Sample 2 (xlx)
               </a>
             </li>
             <li>
-              <a href="/assets/cp-533-action-item-upload-bookkeeping.pdf" className="text-blue-600 hover:text-blue-800 hover:underline">
+              <a href={asset("/assets/cp-533-action-item-upload-bookkeeping.pdf")} className="text-blue-600 hover:text-blue-800 hover:underline">
                 Test Sample 3 (pdf)
               </a>
             </li>
@@ -160,7 +161,7 @@ export default function ProjectsPage() {
         <section>
           <h3 className="font-semibold text-[#1a202c]">Application Interface</h3>
           <div className="grid grid-cols-2 gap-4 p-4 sm:grid-cols-3 md:grid-cols-4">
-            <GalleryImage href="/assets/msa1.jpg" src="/assets/msa1.jpg" alt="App UI 1" />
+            <GalleryImage href={asset("/assets/msa1.jpg")} src={asset("/assets/msa1.jpg")} alt="App UI 1" />
           </div>
         </section>
 
@@ -168,17 +169,17 @@ export default function ProjectsPage() {
           <h3 className="font-semibold text-[#1a202c]">Test Documentation</h3>
           <ul className="list-inside list-disc space-y-1 text-blue-600">
             <li>
-              <a href="/assets/msa-266-test-documentation.pdf" className="text-blue-600 hover:text-blue-800 hover:underline">
+              <a href={asset("/assets/msa-266-test-documentation.pdf")} className="text-blue-600 hover:text-blue-800 hover:underline">
                 Test Sample 1 (PDF)
               </a>
             </li>
             <li>
-              <a href="/assets/msa-402-test-documentation.pdf" className="text-blue-600 hover:text-blue-800 hover:underline">
+              <a href={asset("/assets/msa-402-test-documentation.pdf")} className="text-blue-600 hover:text-blue-800 hover:underline">
                 Test Sample 2 (PDF)
               </a>
             </li>
             <li>
-              <a href="/assets/msa-408-test-documentation.pdf" className="text-blue-600 hover:text-blue-800 hover:underline">
+              <a href={asset("/assets/msa-408-test-documentation.pdf")} className="text-blue-600 hover:text-blue-800 hover:underline">
                 Test Sample 3 (PDF)
               </a>
             </li>
@@ -222,10 +223,10 @@ export default function ProjectsPage() {
         <section>
           <h3 className="mb-2 font-semibold text-[#1a202c]">Application Interface</h3>
           <div className="grid grid-cols-2 gap-4 p-4 sm:grid-cols-3 md:grid-cols-4">
-            <GalleryImage href="/assets/v1.jpg" src="/assets/v1.jpg" alt="App UI 1" />
-            <GalleryImage href="/assets/v2.jpg" src="/assets/v2.jpg" alt="App UI 2" />
-            <GalleryImage href="/assets/v3.jpg" src="/assets/v3.jpg" alt="App UI 3" />
-            <GalleryImage href="/assets/v4.jpg" src="/assets/v4.jpg" alt="App UI 4" />
+            <GalleryImage href={asset("/assets/v1.jpg")} src={asset("/assets/v1.jpg")} alt="App UI 1" />
+            <GalleryImage href={asset("/assets/v2.jpg")} src={asset("/assets/v2.jpg")} alt="App UI 2" />
+            <GalleryImage href={asset("/assets/v3.jpg")} src={asset("/assets/v3.jpg")} alt="App UI 3" />
+            <GalleryImage href={asset("/assets/v4.jpg")} src={asset("/assets/v4.jpg")} alt="App UI 4" />
           </div>
         </section>
 
@@ -233,12 +234,12 @@ export default function ProjectsPage() {
           <h3 className="font-semibold text-[#1a202c]">Test Documentation</h3>
           <ul className="list-inside list-disc space-y-1 text-blue-600">
             <li>
-              <a href="/assets/bug-ticket-sample.pdf" className="text-blue-600 hover:text-blue-800 hover:underline">
+              <a href={asset("/assets/bug-ticket-sample.pdf")} className="text-blue-600 hover:text-blue-800 hover:underline">
                 Test Document 1 (PDF)
               </a>
             </li>
             <li>
-              <a href="/assets/test-findings-documentation.pdf" className="text-blue-600 hover:text-blue-800 hover:underline">
+              <a href={asset("/assets/test-findings-documentation.pdf")} className="text-blue-600 hover:text-blue-800 hover:underline">
                 Test Document 2 (PDF)
               </a>
             </li>
@@ -284,10 +285,10 @@ export default function ProjectsPage() {
         <section>
           <h3 className="mb-2 font-semibold text-[#1a202c]">Application Interface</h3>
           <div className="grid grid-cols-2 gap-4 p-4 sm:grid-cols-3 md:grid-cols-4">
-            <GalleryImage href="/assets/m1.jpg" src="/assets/m1.jpg" alt="App UI 1" />
-            <GalleryImage href="/assets/m2.jpg" src="/assets/m2.jpg" alt="App UI 2" />
-            <GalleryImage href="/assets/m3.jpg" src="/assets/m3.jpg" alt="App UI 3" />
-            <GalleryImage href="/assets/m4.jpg" src="/assets/m4.jpg" alt="App UI 4" />
+            <GalleryImage href={asset("/assets/m1.jpg")} src={asset("/assets/m1.jpg")} alt="App UI 1" />
+            <GalleryImage href={asset("/assets/m2.jpg")} src={asset("/assets/m2.jpg")} alt="App UI 2" />
+            <GalleryImage href={asset("/assets/m3.jpg")} src={asset("/assets/m3.jpg")} alt="App UI 3" />
+            <GalleryImage href={asset("/assets/m4.jpg")} src={asset("/assets/m4.jpg")} alt="App UI 4" />
           </div>
         </section>
 
@@ -295,12 +296,12 @@ export default function ProjectsPage() {
           <h3 className="font-semibold text-[#1a202c]">Test Documentation</h3>
           <ul className="list-inside list-disc space-y-1 text-blue-600">
             <li>
-              <a href="/assets/mob-12-test-documentation.pdf" className="text-blue-600 hover:text-blue-800 hover:underline">
+              <a href={asset("/assets/mob-12-test-documentation.pdf")} className="text-blue-600 hover:text-blue-800 hover:underline">
                 Test Sample 1 (PDF)
               </a>
             </li>
             <li>
-              <a href="/assets/mob-30-test-documentation.pdf" className="text-blue-600 hover:text-blue-800 hover:underline">
+              <a href={asset("/assets/mob-30-test-documentation.pdf")} className="text-blue-600 hover:text-blue-800 hover:underline">
                 Test Sample 2 (PDF)
               </a>
             </li>
