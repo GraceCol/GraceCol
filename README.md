@@ -1,32 +1,7 @@
 # Grace Collamat Portfolio
 
-A portfolio site built with Next.js 15, the App Router, TypeScript, and Tailwind CSS. It is configured for static export and deployment to GitHub Pages.
+I'm a QA Tester focused on delivering reliable, user-friendly, and high-quality software through structured testing and detailed defect reporting.
 
-## Development
+I have experience testing web applications, responsive/mobile interfaces, financial workflows, integrations, and business management platforms. I enjoy finding issues, understanding their root cause, and working closely with developers and product teams to ensure fixes are properly validated.
 
-Install dependencies and start the development server:
-
-```bash
-npm install
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000).
-
-Create and serve a production build with:
-
-```bash
-npm run build
-npm start
-```
-
-## Routes
-
-- `app/page.tsx` - About
-- `app/projects/page.tsx` - Projects
-- `app/support/page.tsx` - Support
-- `app/contact/page.tsx` - Contact
-
-Shared layout and navigation live in `components/PortfolioLayout.tsx`. Public images and documents are served from `public/assets/`.
-
-The production build exports to `out/`. The GitHub Actions workflow deploys that directory to GitHub Pages; `lib/site-config.ts` and `next.config.ts` configure the `/GraceCol` project-site base path for production.
+Please [Visit My Portfolio](https://gracecol.github.io/GraceCol/) to learn more about my QA testing experience, skills, and projects.
